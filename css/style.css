@@ -86,7 +86,7 @@ a:hover {
 }
 
 .fixed-header .main-header{
-    background: rgba(255, 255, 255, .9);
+    background: rgba(255, 255, 255, .5);
     backdrop-filter: blur(10px);
     box-shadow: 0 .125rem .25rem rgba(55, 55, 55, .07);
 }
@@ -511,7 +511,7 @@ main {
 .feature-box-small {
     padding: 15px;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .feature-box-small:hover {
@@ -550,7 +550,7 @@ main {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 12px;
-    border-radius: 30px;
+    border-radius: 10px;
     margin-bottom: 18px;
 }
 
@@ -585,12 +585,16 @@ main {
     }
 }
 
+.contact-form {
+    border-radius: 10px;
+}
+
 .contact-form h2 {
     margin: 0 0 30px;
 }
 
 .contact-form .form-control {
-    border-radius: 0;
+    border-radius: 10;
     border: 1px solid var(--dark-color);
     box-shadow: none;
     padding: .575rem .75rem;
