@@ -664,3 +664,33 @@ main {
 .footer .nav a + a {
     margin-left: 18px;
 }
+
+.back-to-top-btn {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background: #1ca4ff;
+    color: #fff;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 32px;
+    z-index: 99;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.back-to-top-btn.active {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.back-to-top-btn:hover {
+    background: #197ec2;
+    color: #c9c9c9;
+}

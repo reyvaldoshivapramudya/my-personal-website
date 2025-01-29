@@ -17,6 +17,23 @@ $(document).ready(function () {
         typeSpeed: 90,
         loop: true
       });
+
+    const $backToTopBtn = $('.back-to-top-btn');
+    
+    // Tampilkan/sembunyikan tombol saat scroll
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 800) {
+            $backToTopBtn.addClass('active');
+        } else {
+            $backToTopBtn.removeClass('active');
+        }
+    });
+
+    // Smooth scroll ke atas saat tombol diklik
+    $backToTopBtn.click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 'smooth');
+    });
 });
 
  // Get the form element
