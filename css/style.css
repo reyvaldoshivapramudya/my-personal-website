@@ -533,13 +533,9 @@ main {
 /* PROJECT */
 .project-box .project-img {
     position: relative;
-    box-shadow: 0 0 0 0 var(--dark-color);
     transition: .3s;
 }
 
-.project-box .project-img:hover {
-    box-shadow: 5px 5px 0 0 var(--dark-color);
-}
 
 .project-box .project-text span {
     display: inline-block;
@@ -693,4 +689,17 @@ main {
 .back-to-top-btn:hover {
     background: #197ec2;
     color: #c9c9c9;
+}
+
+@media (max-width: 767px) {
+    .back-to-top-btn {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 24px;
+    }
 }
